@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+aside::-webkit-scrollbar {
+  width: 0;
+}
+main::-webkit-scrollbar {
+  width: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: grey;
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+aside {
+  flex: 0 0 20%;
+  max-width: 20%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: yellow;
+  padding-top: 40px;
+}
+main {
+  flex: 0 0 79%;
+  max-width: 79%;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: red;
+  padding-top: 40px;
+}
