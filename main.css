@@ -1,3 +1,6 @@
+:root {
+  --bg-white: #ffffff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,19 +22,32 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: grey;
+  background-color: var(--bg-white);
 }
 .main-section {
   display: flex;
   justify-content: space-between;
   gap: 1%;
 }
+
+nav .nav-items {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+aside,
+main {
+  padding: 0 16px;
+  border: 1px solid red;
+}
 aside {
   flex: 0 0 20%;
   max-width: 20%;
   height: 100vh;
   overflow-y: auto;
-  background-color: yellow;
+  background-color: var(--red);
   padding-top: 40px;
 }
 main {
@@ -41,4 +57,7 @@ main {
   overflow-y: auto;
   background-color: red;
   padding-top: 40px;
+}
+.sidebar-items {
+  list-style: none;
 }
