@@ -1,63 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --bg-white: #ffffff;
+  --bg-black: #000000;
+  --bg-line: #e6e7ec;
+  --text-secondary: #83899f;
+  --text-primary: #0a1b39;
 }
 * {
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-y: hidden;
+}
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 48px;
 }
-aside::-webkit-scrollbar {
-  width: 0;
-}
-main::-webkit-scrollbar {
-  width: 0;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--bg-white);
+
+header,
+aside,
+main {
+  padding: 0 16px;
+  /* border: 1px solid red; */
 }
 .main-section {
   display: flex;
   justify-content: space-between;
   gap: 1%;
 }
+.block {
+  display: none !important;
+}
+.active {
+  display: block !important;
+}
 
+/* === header style === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-white);
+  box-shadow: 0px 4px 200px 0px #00000040;
+}
 nav .nav-items {
-  height: 30px;
+  height: 46px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
 }
-aside,
-main {
-  padding: 0 16px;
-  border: 1px solid red;
+.nav-items .nav-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
+
+.nav-items .nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 32px;
+  padding: 2px 12px;
+  border-radius: 7px;
+  border: 1px solid #2222;
+  transition: all 0.3s ease;
+}
+.nav-items .nav-search:hover {
+  box-shadow: 0px 0px 5px 0px #00000040;
+}
+.nav-items .nav-search input {
+  border: none;
+  outline: none;
+}
+.nav-items .nav-search img {
+  width: 16px;
+  height: 16px;
+}
+
+.nav-items .nav-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.nav-items .nav-settings img {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-item .nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.nav-item .nav-bar span {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: var(--bg-black);
+}
+.nav-item .nav-bar::before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: var(--bg-black);
+}
+.nav-item .nav-bar::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: var(--bg-black);
+}
+/* ==== aside style === */
 aside {
   flex: 0 0 20%;
   max-width: 20%;
   height: 100vh;
   overflow-y: auto;
   background-color: var(--red);
-  padding-top: 40px;
+  margin-top: 48px;
+  box-shadow: 0px 4px 14px -6px #00000040;
 }
+aside .sidebar-title {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-secondary);
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+  margin-top: 30px;
+  border-bottom: 1px solid var(--bg-line);
+}
+aside .sidebar-items {
+  list-style: none;
+}
+aside .sidebar-item {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid white;
+  padding: 12px 0 6px 0;
+  cursor: pointer;
+}
+@keyframes example {
+  from {
+    border-bottom: 1px solid red;
+    width: 0%;
+  }
+  to {
+    border-bottom: 1px solid yellow;
+    width: 100%;
+  }
+}
+aside .sidebar-items .sidebar-item:hover {
+  width: 100%;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+aside .sidebar-items .sidebar-item a {
+  display: inline-block;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+aside::-webkit-scrollbar {
+  width: 0;
+}
+
+/* === main style === */
 main {
   flex: 0 0 79%;
   max-width: 79%;
   height: 100vh;
   overflow-y: auto;
   background-color: red;
-  padding-top: 40px;
+  margin-top: 48px;
 }
-.sidebar-items {
-  list-style: none;
+main::-webkit-scrollbar {
+  width: 0;
 }
