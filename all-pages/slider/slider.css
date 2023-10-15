@@ -17,7 +17,23 @@
   border-radius: 7px;
 }
 .slider .slider-items .slider-item input {
+  appearance: none;
+  background: linear-gradient(
+    to right,
+    var(--primary-main) 40%,
+    var(--primary-main-opacity) 40%
+  );
+  border-radius: 12px;
+  height: 6px;
   width: 100%;
+}
+.slider .slider-items .slider-item input::-webkit-slider-thumb {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.slider .slider-items .slider-item input:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 4px var(--primary-main);
 }
 .slider .slider-items .slider-item2 {
 }

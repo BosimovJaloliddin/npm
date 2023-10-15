@@ -11,6 +11,9 @@
   --bg-line: #e6e7ec;
   --text-secondary: #83899f;
   --text-primary: #0a1b39;
+
+  --primary-main: #2196f3;
+  --primary-main-opacity: #2195f34d;
 }
 .dark-mode {
   --bg-header: #050519;
