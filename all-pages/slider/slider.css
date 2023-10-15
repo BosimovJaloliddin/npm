@@ -1,0 +1,23 @@
+.slider {
+  margin: 40px auto;
+}
+.slider .slider-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+}
+.slider .slider-items .slider-item {
+  flex: 0 0 48%;
+  max-width: 48%;
+  padding: 24px 18px;
+  margin-bottom: 32px;
+  border: 1px solid var(--bg-line);
+  border-radius: 7px;
+}
+.slider .slider-items .slider-item input {
+  width: 100%;
+}
+.slider .slider-items .slider-item2 {
+}
