@@ -35,5 +35,17 @@
 .slider .slider-items .slider-item input::-webkit-slider-thumb:hover {
   box-shadow: 0 0 4px var(--primary-main);
 }
-/* .slider .slider-items .slider-item2 {
-} */
+
+.slider .slider-item .slider-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.slider .slider-item .slider-results span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: var(--bg-black);
+}
