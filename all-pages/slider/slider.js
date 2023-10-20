@@ -23,14 +23,3 @@ inputTwo.addEventListener("input", (event) => {
 
   inputTwo.style.background = `linear-gradient(to right, var(--primary-main) ${progress}%, var(--primary-main-opacity) ${progress}%)`;
 });
-
-// input-there
-inputThere.addEventListener("input", (event) => {
-  const inputVal = event.target.value;
-
-  const maxVal = inputThere.max;
-
-  const progress = (inputVal / maxVal) * 100;
-
-  inputThere.style.background = `linear-gradient(to right, var(--primary-main) ${progress}%, var(--primary-main-opacity) ${progress}%)`;
-});

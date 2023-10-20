@@ -1,9 +1,11 @@
-// light and dark mode
 const body = document.querySelector("body");
 const btn = document.querySelector(".nav-settings");
 const moon = document.querySelector(".mode-moon");
 const sun = document.querySelector(".mode-sun");
+const sidebarItems = document.querySelectorAll(".sidebar-item");
+const navLinks = document.querySelectorAll(".nav-link");
 
+// light and dark mode
 if (localStorage.getItem("mode") === "dark") {
   body.classList.add("dark-mode");
   sun.classList.remove("block");
@@ -28,3 +30,5 @@ btn.addEventListener("click", () => {
     sun.classList.add("block");
   }
 });
+
+// aside active

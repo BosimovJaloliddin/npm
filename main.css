@@ -68,7 +68,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 28px;
 }
 
 /* header,
@@ -97,7 +97,7 @@ header {
   right: 0;
   padding: 0 16px;
   background-color: var(--bg-header);
-  box-shadow: 0 0 12px var(--bg-line);
+  box-shadow: 0 0 4px var(--bg-line);
 }
 nav .nav-items {
   height: 46px;
@@ -133,7 +133,7 @@ nav .nav-items {
   transition: all 0.3s ease;
 }
 .nav-items .nav-search:hover {
-  box-shadow: 0px 0px 5px 0px #00000040;
+  box-shadow: 0px 0px 4px #00000040;
 }
 .nav-items .nav-search input {
   border: none;
@@ -191,6 +191,10 @@ nav .nav-items {
   background-color: var(--bg-black);
 }
 /* ==== aside style === */
+.aside-active {
+  border-radius: 7px;
+  background-color: var(--primary-selected) !important;
+}
 aside {
   flex: 0 0 20%;
   max-width: 20%;
@@ -219,16 +223,18 @@ aside ul {
 aside ul li {
   display: flex;
   align-items: center;
-  margin: 4px 0;
-  padding: 8px 0;
+  margin: 4px 4px;
   cursor: pointer;
 }
 aside ul li a {
-  padding: 0 16px;
-  transition: all 1s ease;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
 }
 
 aside ul li:hover {
+  border-radius: 7px;
   background-color: var(--action-hover);
 }
 aside ul li a {
@@ -245,7 +251,6 @@ aside ul li a {
 aside::-webkit-scrollbar {
   width: 0;
 }
-
 /* === main style === */
 main {
   flex: 0 0 79%;
