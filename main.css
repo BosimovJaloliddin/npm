@@ -14,6 +14,33 @@
 
   --primary-main: #2196f3;
   --primary-main-opacity: #2195f34d;
+  --primary-dark: #1e88e5;
+  --primary-light: #42a5f5;
+  --primary-contrast: #ffffff;
+  --primary-hover: #2196f30a;
+  --primary-selected: #2196f314;
+  --primary-focus: #2196f31f;
+  --primary-focusVisible: #2196f34d;
+  --primary-outlinedBorder: #2196f380;
+
+  --secondary-main: #9c27b0;
+  --secondary-dark: #7b1fa2;
+  --secondary-light: #ba68c8;
+  --secondary-contrast: #ffffff;
+
+  --error-main: #d32f2f;
+  --error-dark: #c62828;
+  --error-light: #c62828;
+  --error-contrast: #ffffff;
+
+  --action-active: #0000008f;
+  --action-hover: #0000000a;
+  --action-selected: #00000014;
+  --action-disabledBackground: #0000001f;
+  --action-focus: #0000001f;
+  --action-disabled: #00000061;
+
+  --divider: #0000001f;
 }
 .dark-mode {
   --bg-header: #050519;
@@ -44,12 +71,12 @@ body {
   padding: 0 48px;
 }
 
-header,
+/* header,
 aside,
 main {
   padding: 0 16px;
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 .main-section {
   display: flex;
   justify-content: space-between;
@@ -68,6 +95,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  padding: 0 16px;
   background-color: var(--bg-header);
   box-shadow: 0 0 12px var(--bg-line);
 }
@@ -180,32 +208,30 @@ aside .sidebar-title {
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-secondary);
-  padding-bottom: 12px;
+  padding: 0 16px 12px 16px;
   margin-bottom: 18px;
   margin-top: 30px;
   border-bottom: 1px solid var(--bg-line);
 }
-aside .sidebar-items {
+aside ul {
   list-style: none;
 }
-aside .sidebar-item {
+aside ul li {
   display: flex;
   align-items: center;
-  margin: 12px 0;
-}
-aside .sidebar-item a {
-  width: 0%;
-  padding-bottom: 4px;
-  border-bottom: 1.5px solid white;
+  margin: 4px 0;
+  padding: 8px 0;
   cursor: pointer;
+}
+aside ul li a {
+  padding: 0 16px;
   transition: all 1s ease;
 }
 
-aside .sidebar-items .sidebar-item a:hover {
-  width: 100%;
-  border-bottom: 1.5px solid var(--bg-black);
+aside ul li:hover {
+  background-color: var(--action-hover);
 }
-aside .sidebar-items .sidebar-item a {
+aside ul li a {
   display: inline-block;
   font-family: "Inter";
   font-size: 14px;
@@ -225,6 +251,7 @@ main {
   flex: 0 0 79%;
   max-width: 79%;
   height: 100vh;
+  padding: 0 16px;
   overflow-y: auto;
   background-color: var(--bg-main);
   margin-top: 48px;
