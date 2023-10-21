@@ -11,6 +11,7 @@
   --bg-line: #e6e7ec;
   --text-secondary: #83899f;
   --text-primary: #0a1b39;
+  --text-disabled: #00000061;
 
   --primary-main: #2196f3;
   --primary-main-opacity: #2195f34d;
@@ -260,7 +261,16 @@ main {
   overflow-y: auto;
   background-color: var(--bg-main);
   margin-top: 48px;
+  padding-bottom: 58px;
 }
 main::-webkit-scrollbar {
   width: 0;
+}
+main .main-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 75px;
+  letter-spacing: -1.5px;
+  text-align: left;
+  color: var(--text-primary);
 }

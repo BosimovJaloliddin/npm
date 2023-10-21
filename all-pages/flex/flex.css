@@ -1,0 +1,100 @@
+.example-wrapper {
+  margin-top: 38px;
+  padding: 32px 24px;
+  border-radius: 7px;
+  border: 1px solid var(--bg-line);
+}
+.example-radios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+.example-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.example-radio input,
+.example-radio label {
+  cursor: pointer;
+}
+.example-radio label {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 12px;
+  color: var(--text-primary);
+}
+
+.flex-items_one {
+  display: flex;
+  margin-top: 32px;
+}
+.flex-items_one.vertical {
+  flex-direction: column;
+}
+.flex-items_one .flex-item_one {
+  flex: 0 0 25%;
+  max-width: 25%;
+  min-height: 60px;
+}
+.flex-items_one .blue1 {
+  background-color: var(--primary-dark);
+}
+.flex-items_one .blue2 {
+  background-color: var(--primary-light);
+}
+
+/* =================================== */
+.flex-justify_styles,
+.flex-align_styles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  margin: 12px 0;
+}
+.flex-justify_styles .flex-justify_style,
+.flex-align_styles .flex-align_style {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 7px;
+  border: 0;
+  color: var(--bg-white);
+  background-color: var(--secondary-light);
+  cursor: pointer;
+}
+.flex-justify_styles .flex-justify_style.active,
+.flex-align_styles .flex-align_style.active {
+  background-color: var(--secondary-dark);
+}
+.flex-justify_styles .flex-justify_style:active {
+  transform: scale(0.96);
+}
+.flex-items_two {
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 24px;
+  border-radius: 7px;
+  border: 1px solid var(--primary-main);
+}
+.flex-items_two .flex-item_two {
+  flex: 0 0 10%;
+  min-width: 10%;
+  min-height: 40px;
+  border-radius: 7px;
+  border: 0;
+  background-color: var(--primary-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
