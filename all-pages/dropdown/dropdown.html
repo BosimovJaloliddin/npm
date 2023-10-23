@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dropdown.css">
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="./slider.css">
-    <title>npm</title>
+    <title>Dropdown</title>
 </head>
 
 <body>
@@ -37,13 +37,13 @@
         <aside class="sidebar">
             <h3 class="sidebar-title">Layout</h3>
             <ul class="sidebar-items">
-                <li class="sidebar-item aside-active"><a href="slider.html">Slider</a></li>
+                <li class="sidebar-item"><a href="../slider/slider.html">Slider</a></li>
                 <li class="sidebar-item"><a href="../flex/flex.html">Flex</a></li>
                 <li class="sidebar-item"><a href="../grid/grid.html">Grid</a></li>
             </ul>
             <h3 class="sidebar-title">Navigation</h3>
             <ul class="sidebar-items">
-                <li class="sidebar-item"><a href="../dropdown/dropdown.html">Dropdown</a></li>
+                <li class="sidebar-item"><a href="dropdown.html">Dropdown</a></li>
                 <li class="sidebar-item"><a href="/#">Menu</a></li>
                 <li class="sidebar-item"><a href="/#">Pegination</a></li>
                 <li class="sidebar-item"><a href="/#">Steps</a></li>
@@ -102,28 +102,61 @@
             </ul>
         </aside>
         <main>
-            <h1 class="main-title">Slider</h1>
-            <div class="slider">
-                <div class="slider-items">
-                    <div class="slider-item slider-item1">
-                        <input type="range" min="0" max="100" value="40" class="slider-one">
-                    </div>
-                    <div class="slider-item slider-item2">
-                        <input class="slider-two" type="range" value="40" min="0" max="100">
-                        <div class="slider-results">
-                            <span>0</span>
-                            <span class="display-input2">40</span>
+            <h1 class="main-title">Dropdown</h1>
+            <div class="example-wrappers">
+                <div class="example-wrapper">
+                    <div class="dropdown-one_items">
+                        <div class="dropdown-one_item">
+                            Hover me <svg class="dropdown-one_arrow" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ChevronRightFilled">
+                                    <path id="Vector"
+                                        d="M8.89626 5.5L7.60376 6.7925L11.8021 11L7.60376 15.2075L8.89626 16.5L14.3963 11L8.89626 5.5Z"
+                                        fill="black" fill-opacity="0.87" />
+                                </g>
+                            </svg>
+                            <div class="dropdown-one_hover">
+                                <button class="dropdown-one_btn" type="button">
+                                    item 1
+                                </button>
+                                <button class="dropdown-one_btn" disabled="true" type="button">
+                                    item 2
+                                </button>
+                                <button class="dropdown-one_btn" disabled="true" type="button">
+                                    item 3
+                                </button>
+                                <button class="dropdown-one_btn" type="button">
+                                    item 4
+                                </button>
+                                <button class="dropdown-one_btn red" type="button">
+                                    item 5
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="example-wrapper">
+                    <div class="dropdown-two_items">
+                        <div class="dropdown-two_item dropdown-two_1">1</div>
+                        <div class="dropdown-two_item dropdown-two_2">2</div>
+                        <div class="dropdown-two_item dropdown-two_3">3</div>
+                        <div class="dropdown-two_item dropdown-two_4">4</div>
+                        <div class="dropdown-two_item dropdown-two_5">5</div>
+                        <div class="dropdown-two_item dropdown-two_6">6</div>
+                        <div class="dropdown-two_item dropdown-two_7">7</div>
+                        <div class="dropdown-two_item dropdown-two_8">8</div>
+                        <div class="dropdown-two_item dropdown-two_9">9</div>
+                        <div class="dropdown-two_item dropdown-two_10">10</div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>
 
-
 </body>
 
+<script src="./dropdown.js"></script>
 <script src="../../js/main.js"></script>
-<script src="./slider.js"></script>
 
 </html>
