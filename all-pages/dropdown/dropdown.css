@@ -160,13 +160,11 @@
   color: var(--text-primary);
   cursor: pointer;
 }
-
 .dropdown-there_hover {
   left: 20px;
   top: 36px;
   width: fit-content;
 }
-
 .dropdown-there .dropdown-there_menu:hover .dropdown-there_hover {
   display: block;
 }
